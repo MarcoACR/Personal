@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./quiensoy.component.css']
 })
 export class QuiensoyComponent implements OnInit {
+  activeId: number = 1;
 
   constructor() { }
 

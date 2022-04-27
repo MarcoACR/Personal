@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { QuiensoyComponent } from './quiensoy/quiensoy.component';
 import { ProyectosComponent } from './proyectos/proyectos.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [		
@@ -14,7 +15,8 @@ import { ProyectosComponent } from './proyectos/proyectos.component';
    ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,5 +1,5 @@
 <nav class="navbar navbar-dark bg-dark navbar-expand-md fixed-top">
-  
+
   <div class="container">
 
     <a class="navbar-brand">
@@ -8,15 +8,12 @@
     </a>
 
     <div class="d-flex">
-      <ul class="nav justify-content-end">
-        <li class="nav-item">
-          <a class="nav-link" href="#">Inicio</a>
+      <ul ngbNav [(activeId)]="activeId" class="nav justify-content-end">
+        <li [ngbNavItem]="1" class="nav-item">
+          <button class="btn btn-outline-success me-2" href="#">¿Quien soy?</button>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">¿Quien soy?</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Proyectos</a>
+        <li [ngbNavItem]="2" class="nav-item">
+          <button class="btn btn-outline-success" href="#">Proyectos</button>
         </li>
       </ul>
     </div>
@@ -30,16 +27,19 @@
         <img src="/assets/img/Developer.png" alt="Soy_Desarrollador" class="img-fluid mb-4 mb-md-0">
       </div>
       <div class="col-12 col-md-6 text-center text-md-left align-self-md-center ">
-        <h1 class="display-4 font-weight-bold text-primary">¿Quien soy?</h1> 
+        <h1 class="display-4 font-weight-bold text-primary">¿Quien soy?</h1>
         <p>
-          Hola soy Marco un desarrollador de software, con algunos ayeres en este ámbito, he diseñado apps donde cada una de ellas fue parte fundamental de la organización, esto me ayudo a convertirme en una pieza clave de mi equipo de trabajo, de esta manera poder contribuir con el cumplimiento de objetivos y crecimiento de la empresa de manera paralela.
-        </p> 
-        <a href="#" class="btn btn-primary btn-lg">Leér más</a> 
+          Hola soy Marco un desarrollador de software, con algunos ayeres en este ámbito, he diseñado apps donde cada
+          una de ellas fue parte fundamental de la organización, esto me ayudo a convertirme en una pieza clave de mi
+          equipo de trabajo, de esta manera poder contribuir con el cumplimiento de objetivos y crecimiento de la
+          empresa de manera paralela.
+        </p>
+        <a href="#" class="btn btn-primary btn-lg">Leér más</a>
       </div>
     </div>
   </div>
 </section>
 
 <section>
-<app-proyectos></app-proyectos>
+  <app-proyectos></app-proyectos>
 </section>
