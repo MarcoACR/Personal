@@ -1,0 +1,10 @@
+@import 'tailwindcss';
+
+:root{
+  font-family: 'Monserrat', sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+  color-scheme: light;
+  color: #1f2937;
+  background-color: #fff;
+}
