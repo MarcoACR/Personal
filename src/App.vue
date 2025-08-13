@@ -56,7 +56,7 @@ onUnmounted(() => {
         <div class="flex items-center justify-between h-16">
           <!-- Logo -->
           <a
-            href="#hero"
+            :href="`#${navItems[0].id}`"
             @click.prevent="scrollToSection('hero')"
             class="text-2xl font-bold text-gray-900 hover:text-primary-600 transition-colors duration-200"
           >
