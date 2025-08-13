@@ -5,10 +5,11 @@ import vue from '@vitejs/plugin-vue';
 import vueDevTools from 'vite-plugin-vue-devtools';
 import tailwindcss from '@tailwindcss/vite';
 import { viteSingleFile } from 'vite-plugin-singlefile';
+import netlify from '@netlify/vite-plugin';
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [vue(), tailwindcss(), vueDevTools(), viteSingleFile()],
+  plugins: [vue(), tailwindcss(), vueDevTools(), viteSingleFile(), netlify()],
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),
