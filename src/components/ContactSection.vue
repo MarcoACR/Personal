@@ -98,7 +98,7 @@ const handleSubmit = async () => {
       </div>
 
       <div class="grid lg:grid-cols-2 gap-16">
-        <!-- Contact Info -->
+        <!-- ContactSection Info -->
         <div class="animate-slide-in">
           <h3 class="text-2xl font-semibold text-gray-900 mb-8">Informacion de contacto</h3>
           <div class="space-y-6 mb-8">
@@ -235,7 +235,7 @@ const handleSubmit = async () => {
           </div>
         </div>
 
-        <!-- Contact Form -->
+        <!-- ContactSection Form -->
         <div class="animate-fade-up">
           <form @submi.prevent="handleSubmit" class="space-y-6">
             <div class="grid md:grid-cols-2 gap-6">
