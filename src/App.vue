@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import { onMounted, onUnmounted, ref } from 'vue';
-import AboutMe from '@/components/AboutMe.vue';
+import AboutMeSection from '@/components/AboutMeSection.vue';
 import HeroSection from '@/components/HeroSection.vue';
-import Projects from '@/components/Projects.vue';
-import Contact from '@/components/Contact.vue';
+import ProjectsSection from '@/components/ProjectsSection.vue';
+import ContactSection from '@/components/ContactSection.vue';
 
 interface NavItem {
   id: string;
@@ -134,9 +134,9 @@ onUnmounted(() => {
     <main>
       <!-- Contained -->
       <HeroSection />
-      <AboutMe />
-      <Projects />
-      <Contact />
+      <AboutMeSection />
+      <ProjectsSection />
+      <ContactSection />
     </main>
 
     <!-- Footer -->
